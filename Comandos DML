@@ -25,7 +25,7 @@ where Department_ID IN
 
 (SELECT Department_ID 
  fROM HR.Departments 
- where DEpartament_NAME IN ('Marketing')
+ Where Departament_NAME IN ('Marketing')
 );
 
 
