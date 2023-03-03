@@ -1,0 +1,31 @@
+// Coletando informações da tabela de empregados chamada Employee 
+
+SELECT EMPLOYEE_ID,First_name,Last_name,Salary
+FROM HR.EMPLOYEE
+where Mananger_ID In (101,145,149);
+
+// Selecionando empregados com  a primeira letra do nome 
+
+SELECT EMPLOYEE_ID,Fist_name,Last_name,Salary
+FROM HR. Employee 
+Where First_name LIKE %S%
+
+// Selecionando os dados do intervalo usando como metrica os salarios 
+
+SELECT EMPLOYEE_ID,Fist_name,Last_name,Salary
+FROM HR. Employee 
+WHERE Salary BETWEEN 2500 AND 5000;
+
+// Funções de decisão
+// criando uma Query
+
+SELECT EMPLOYEE_ID, Firts_name,Last_name,Salary
+from HR. Employee
+where Department_ID IN 
+
+(SELECT Department_ID 
+ fROM HR.Departments 
+ where DEpartament_NAME IN ('Marketing')
+);
+
+
